@@ -46,20 +46,27 @@ bin/serve.sh                              # dashboard at http://localhost:8077
    finished with them unused so you can decide on a manual sub (it nets the cost of
    losing auto-subs/VC fallback for you).
 
-## Automation (installed)
-A single crontab entry runs every 20 minutes (`crontab -l` to see it):
-```cron
-*/20 * * * * /home/aniket/aniket-code/fantasy-world-cup/bin/run.sh auto >> /tmp/wcfantasy.log 2>&1
-```
+## Automation (cloud — survives the laptop being off)
+GitHub Actions on the private repo **aniketjoshipr/wc-fantasy-bot** runs
+`wcfantasy auto` on a schedule (`.github/workflows/auto.yml`): hourly baseline +
+every 20 min during match hours, **July 1–20 only** (nothing runs — and no email
+can send — after the tournament). SMTP creds live in GitHub Secrets. Each run
+commits `data/state.json` / `predictions.json` / `reports/` / `dashboard/` back
+to the repo, so `git pull` shows you everything the bot did.
+
 `auto` reads the real deadlines from FIFA's feed and only acts when relevant:
 - **~30h before a deadline** → "early look" recommendation email
-- **~8h before** → refreshes injury news via headless Claude, then a "FINAL CALL" email
-- **during matches** → email only if one of your starters' match finished without them playing
+- **~8h before** → "FINAL CALL" email
+- **during matches** → email only if one of your starters' match finished without playing
 - **after a round completes** → settles predicted-vs-actual and emails the comparison
 
-State in `data/state.json` prevents duplicate emails. WSL note: keep cron running
-(`sudo service cron start`) and remember cron dies with the WSL VM — if the laptop
-was off/WSL shut down at send time, run `bin/run.sh auto` manually.
+State in `data/state.json` prevents duplicate emails (delete a round's entry from
+`sent` to force a resend). The local crontab entry has been removed — run
+`bin/run.sh auto|recommend|live` manually whenever you like, and after changing
+`squad.json`/`news.json`/`elo.json` run **`bin/sync.sh`** so the cloud runner
+uses your latest team. Caveat: the cloud can't run the headless-Claude news
+refresh, so injury news updates happen when you run it locally (or edit
+`data/news.json` and sync).
 
 ## Email / Telegram credentials
 Fill in `~/.config/wcfantasy.env` (chmod 600, outside the repo) — instructions are
