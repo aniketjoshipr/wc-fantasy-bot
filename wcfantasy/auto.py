@@ -58,7 +58,7 @@ def _send_recommendation(stage_label: str, settled: list[str], email: bool) -> N
         report.telegram_send(report.strip_ansi(text)[:3500])
 
 
-def run(email: bool = True) -> None:
+def run(email: bool = True, force: bool = False) -> None:
     state = load_state(max_age_min=15)            # refreshes feeds if stale
     st = load_json(DATA_DIR / "state.json", {}) or {}
     settled = tracker.settle(state)
@@ -67,7 +67,13 @@ def run(email: bool = True) -> None:
 
     # ---- pre-deadline recommendations ----
     rnd = state.next_scheduled_round()
-    if rnd is not None:
+    if force:
+        print("[auto] FORCED recommendation run")
+        if rnd is not None:
+            _send_recommendation("manual", settled, email)
+        else:
+            print("[auto] no scheduled round to recommend for")
+    elif rnd is not None:
         rid, h = str(rnd["id"]), _hours_until(rnd["startDate"])
         sent = st.setdefault("sent", {}).setdefault(rid, [])
         if 0 < h <= FINAL_H and "final" not in sent:

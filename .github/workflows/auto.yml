@@ -4,7 +4,12 @@ name: wcfantasy-auto
 # predicted-vs-actual. State is committed back to the repo after each run.
 
 on:
-  workflow_dispatch: {}        # manual trigger from the Actions tab
+  workflow_dispatch:           # manual trigger from the Actions tab
+    inputs:
+      force:
+        description: "Force a fresh recommendation email now"
+        type: boolean
+        default: true
   schedule:
     # (UTC; GitHub may delay scheduled runs a few minutes — auto catches up.)
     # hourly baseline outside match hours, through end of tournament (Jul 19)
@@ -33,6 +38,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          WCF_FORCE: ${{ github.event.inputs.force || 'false' }}
         run: python3 -m wcfantasy auto
 
       - name: Persist state back to repo

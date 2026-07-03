@@ -105,7 +105,9 @@ def cmd_squad(args):
 
 
 def cmd_auto(args):
-    auto.run(email=not args.no_email)
+    import os
+    force = args.force or os.environ.get("WCF_FORCE", "").lower() in ("1", "true")
+    auto.run(email=not args.no_email, force=force)
 
 
 def cmd_compare(_args):
@@ -129,6 +131,8 @@ def main():
 
     a = sub.add_parser("auto", help="cron entrypoint: acts only when a deadline/live event is near")
     a.add_argument("--no-email", action="store_true")
+    a.add_argument("--force", action="store_true",
+                   help="send a fresh recommendation now, even if already alerted")
     a.set_defaults(fn=cmd_auto)
 
     c = sub.add_parser("compare", help="predicted vs actual score per round")
