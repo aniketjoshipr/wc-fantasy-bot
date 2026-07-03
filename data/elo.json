@@ -1,0 +1,22 @@
+{
+ "_comment_": "Team strength (World-Football-Elo-style, seeded 2026-07-03 incl. tournament form). Edit freely; higher = stronger. Teams not listed default to 1750.",
+ "ARG": 2120,
+ "FRA": 2100,
+ "ESP": 2085,
+ "ENG": 2020,
+ "BRA": 2010,
+ "POR": 1990,
+ "MAR": 1930,
+ "COL": 1900,
+ "BEL": 1885,
+ "NOR": 1885,
+ "MEX": 1870,
+ "SUI": 1855,
+ "USA": 1815,
+ "CAN": 1810,
+ "PAR": 1770,
+ "AUS": 1730,
+ "EGY": 1690,
+ "GHA": 1660,
+ "CPV": 1520
+}

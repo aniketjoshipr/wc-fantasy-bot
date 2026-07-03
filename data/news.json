@@ -1,0 +1,12 @@
+{
+ "_comment": "Injury/suspension/sentiment layer. Maintained by bin/update-news.sh (headless claude) or by hand. status: out | doubt | fit | nailed. Optional p_play overrides everything.",
+ "updated": "2026-07-03T12:00:00Z",
+ "players": {
+  "1366": {"status": "doubt", "note": "Raphinha (BRA) hamstring, missed R32; doubt vs Norway"},
+  "1709": {"status": "doubt", "note": "Reece James (ENG) missed last two matches"},
+  "488": {"status": "doubt", "note": "Declan Rice (ENG) back issue, being assessed", "p_play": 0.7},
+  "2000": {"status": "doubt", "note": "Nico Williams (ESP) injured vs Uruguay"},
+  "1081": {"status": "out", "note": "Yeremy Pino (ESP) injured vs Uruguay"},
+  "1597": {"status": "doubt", "note": "Salah (EGY) knee problem, R32 participation in balance"}
+ }
+}

@@ -1,0 +1,6 @@
+# FIFA feed caches — large, refetched on every run
+data/players.json
+data/rounds.json
+data/squads.json
+__pycache__/
+*.pyc

@@ -1,0 +1,43 @@
+name: wc-fantasy auto
+# Cloud runner: same `wcfantasy auto` as local cron, but survives the laptop
+# being off. Emails at ~30h/~8h pre-deadline, live sub-alerts, settles
+# predicted-vs-actual. State is committed back to the repo after each run.
+
+on:
+  workflow_dispatch: {}        # manual trigger from the Actions tab
+  schedule:
+    # (UTC; GitHub may delay scheduled runs a few minutes — auto catches up.)
+    # hourly baseline outside match hours, through end of tournament (Jul 19)
+    - cron: '15 5-15 1-20 7 *'
+    # every 20 min during the kickoff window (16:00 UTC – 04:59 UTC)
+    - cron: '*/20 16-23 1-20 7 *'
+    - cron: '*/20 0-4 1-20 7 *'
+
+concurrency: wcfantasy         # never two runs at once (state would race)
+
+permissions:
+  contents: write              # to push state/predictions/reports back
+
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run wcfantasy auto
+        env:
+          SMTP_HOST: smtp-relay.brevo.com
+          SMTP_PORT: "587"
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python3 -m wcfantasy auto
+
+      - name: Persist state back to repo
+        run: |
+          git config user.name "wcfantasy-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/state.json data/predictions.json reports dashboard
+          git diff --cached --quiet || { git commit -m "auto: state $(date -u +%FT%TZ)"; git pull --rebase; git push; }

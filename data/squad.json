@@ -1,0 +1,19 @@
+{
+ "_comment": "YOUR team. Keep in sync with the app after applying transfers (wcfantasy squad --apply-plan N does it for you). Player ids match players.json.",
+ "updated": "2026-07-03",
+ "round": "R16",
+ "player_ids": [757, 1598, 1088, 743, 1102, 1318, 916, 56, 501, 491, 173, 792, 38, 500, 174],
+ "captain_id": 38,
+ "vice_id": 501,
+ "bench_order": [174, 173, 792],
+ "bench_gk": 1598,
+ "free_transfers": 4,
+ "boosters_available": {
+  "wildcard": true,
+  "12th_man": true,
+  "max_captain": true,
+  "qualification": true,
+  "cs_shield": true
+ },
+ "_boosters_note": "VERIFY in the app which boosters you have already used and set them to false here."
+}

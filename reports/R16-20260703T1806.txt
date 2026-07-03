@@ -1,0 +1,60 @@
+=== FIFA Fantasy — R16 recommendation ===
+Deadline (first kickoff): 2026-07-04T18:00:00+01:00   free transfers: 4
+
+-- Current squad (EP this round) --
+   GK Raúl Rangel              MEX $3.9  EP  3.9 vs ENG own  8.8%
+   GK Manuel Neuer             GER $5.0  EP  0.0 vs ?   own  8.7% ELIMINATED
+  DEF Marc Cucurella           ESP $5.1  EP  6.1 vs POR own 33.9%
+  DEF Jorge Sánchez            MEX $4.0  EP  6.0 vs ENG own  4.0%
+  DEF Lisandro Martínez        ARG $4.6  EP  4.4 vs TBD(SUI/COL/AUS) own  9.5%
+  DEF Nuno Mendes              POR $5.8  EP  4.2 vs ESP own 37.2%
+  DEF Marcos Llorente          ESP $5.5  EP  3.4 vs POR own  4.9%
+  MID Ousmane Dembélé          FRA $10.0 EP 12.4 vs PAR own 35.9%
+  MID Vinícius Júnior          BRA $10.0 EP  8.1 vs NOR own 43.1%
+  MID Ismael Saibari           MAR $6.8  EP  6.1 vs CAN own 12.3%
+  MID Jude Bellingham          ENG $8.3  EP  5.3 vs MEX own 25.1%
+  MID Alexis Mac Allister      ARG $6.6  EP  3.9 vs TBD(SUI/COL/AUS) own  4.1%
+  FWD Kylian Mbappé            FRA $10.5 EP 12.9 vs PAR own 65.8%
+  FWD Lionel Messi             ARG $10.0 EP 12.2 vs TBD(SUI/COL/AUS) own 51.0%
+  FWD Matheus Cunha            BRA $7.3  EP  6.6 vs NOR own  5.0%
+
+-- Transfer plans (net EP = XI+captain EP + hit + 0.15x bench) --
+  [0] 4 transfer(s), hit +0, net EP 108.1  bank $1.9m << RECOMMENDED
+       OUT: Alexis Mac Allister, Marcos Llorente, Manuel Neuer, Jude Bellingham
+       IN : Leandro Trossard, Pedro Porro, Mike Maignan, Bradley Barcola
+  [1] 4 transfer(s), hit +0, net EP 108.1  bank $2.9m 
+       OUT: Alexis Mac Allister, Marcos Llorente, Manuel Neuer, Jude Bellingham
+       IN : Leandro Trossard, Issa Diop, Mike Maignan, Bradley Barcola
+  [2] 4 transfer(s), hit +0, net EP 108.1  bank $2.7m 
+       OUT: Alexis Mac Allister, Marcos Llorente, Manuel Neuer, Jude Bellingham
+       IN : Leandro Trossard, Pedro Porro, Matt Freese, Bradley Barcola
+  [3] 4 transfer(s), hit +0, net EP 108.1  bank $3.7m 
+       OUT: Alexis Mac Allister, Marcos Llorente, Manuel Neuer, Jude Bellingham
+       IN : Leandro Trossard, Issa Diop, Matt Freese, Bradley Barcola
+  [4] 4 transfer(s), hit +0, net EP 108.0  bank $4.3m 
+       OUT: Alexis Mac Allister, Marcos Llorente, Manuel Neuer, Jude Bellingham
+       IN : Leandro Trossard, Pedro Porro, Mike Maignan, Johan Manzambi
+
+-- Best XI after plan [0] — 3-4-3 --
+   GK Mike Maignan             FRA $5.0  EP  5.5 vs PAR own 10.0%
+  DEF Pedro Porro              ESP $5.5  EP  6.7 vs POR own  4.2%
+  DEF Marc Cucurella           ESP $5.1  EP  6.1 vs POR own 33.9%
+  DEF Jorge Sánchez            MEX $4.0  EP  6.0 vs ENG own  4.0%
+  MID Ousmane Dembélé          FRA $10.0 EP 12.4 vs PAR own 35.9% (VC)
+  MID Leandro Trossard         BEL $6.6  EP  8.2 vs USA own  4.7%
+  MID Vinícius Júnior          BRA $10.0 EP  8.1 vs NOR own 43.1%
+  MID Bradley Barcola          FRA $8.0  EP  7.9 vs PAR own  1.9%
+  FWD Kylian Mbappé            FRA $10.5 EP 12.9 vs PAR own 65.8% (C)
+  FWD Lionel Messi             ARG $10.0 EP 12.2 vs TBD(SUI/COL/AUS) own 51.0%
+  FWD Matheus Cunha            BRA $7.3  EP  6.6 vs NOR own  5.0%
+  bench: 1.Ismael Saibari, 2.Lisandro Martínez, 3.Nuno Mendes  GK: Raúl Rangel
+
+-- Booster advice --
+  * Qualification Booster EV this round: +14.3 pts (2 x P(advance) per starter). Rounds left shrink its ceiling — use it in R16.
+  * Clean Sheet Shield EV: ~+6.8 pts across your 4 GK/DEF starters (P(exactly 1 conceded) x CS pts). Best on a defense-heavy XI.
+  * Maximum Captain: hold for the FINAL unless desperate — current captain choice is close (EP gap 0.5).
+  * Wildcard: unlimited rebuild would add ~0.0 EP over the best free-transfer plan this round. Hold (QF/SF often better after surprises).
+  * 12th Man: best add would be Kylian Mbappé (~12.9 EP). Usually strongest in SF/Final when your bench is thin.
+  * Reminder: only ONE booster per round.
+
+Model: form(0.55) + stats(0.45), Elo-Poisson opponent model; edit data/elo.json + data/news.json to steer it.
