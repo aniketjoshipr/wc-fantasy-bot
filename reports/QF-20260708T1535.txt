@@ -1,0 +1,60 @@
+=== FIFA Fantasy — QF recommendation ===
+Deadline (first kickoff): 2026-07-09T21:00:00+01:00   free transfers: 4
+
+-- Current squad (EP this round) --
+   GK Raúl Rangel              MEX $3.9  EP  0.0 vs ?   own  7.6% ELIMINATED
+   GK Manuel Neuer             GER $5.0  EP  0.0 vs ?   own  6.7% ELIMINATED
+  DEF Marcos Llorente          ESP $5.5  EP  6.2 vs BEL own  4.1%
+  DEF Marc Cucurella           ESP $5.1  EP  6.0 vs BEL own 43.9%
+  DEF Lisandro Martínez        ARG $4.6  EP  6.0 vs SUI own 19.6%
+  DEF Jorge Sánchez            MEX $4.0  EP  0.0 vs ?   own  3.2% ELIMINATED
+  DEF Nuno Mendes              POR $5.8  EP  0.0 vs ?   own 28.7% ELIMINATED
+  MID Ousmane Dembélé          FRA $10.0 EP  7.6 vs MAR own 43.1%
+  MID Jude Bellingham          ENG $8.3  EP  7.5 vs NOR own 32.9%
+  MID Alexis Mac Allister      ARG $6.6  EP  3.2 vs SUI own  7.2%
+  MID Ismael Saibari           MAR $6.8  EP  1.6 vs FRA own 19.4%
+  MID Vinícius Júnior          BRA $10.0 EP  0.0 vs ?   own 29.0% ELIMINATED
+  FWD Lionel Messi             ARG $10.0 EP  9.7 vs SUI own 54.4%
+  FWD Kylian Mbappé            FRA $10.5 EP  8.9 vs MAR own 69.8%
+  FWD Matheus Cunha            BRA $7.3  EP  0.0 vs ?   own  3.8% ELIMINATED
+
+-- Transfer plans (net EP = XI+captain EP + hit + 0.15x bench) --
+  [0] 4 transfer(s), hit +0, net EP  88.2  bank $1.6m << RECOMMENDED
+       OUT: Vinícius Júnior, Matheus Cunha, Raúl Rangel, Nuno Mendes
+       IN : Álex Baena, Harry Kane, Unai Simón, Pedro Porro
+  [1] 4 transfer(s), hit +0, net EP  88.2  bank $0.9m 
+       OUT: Vinícius Júnior, Matheus Cunha, Manuel Neuer, Jorge Sánchez
+       IN : Álex Baena, Harry Kane, Unai Simón, Pedro Porro
+  [2] 4 transfer(s), hit +0, net EP  88.2  bank $2.7m 
+       OUT: Vinícius Júnior, Matheus Cunha, Manuel Neuer, Nuno Mendes
+       IN : Álex Baena, Harry Kane, Unai Simón, Pedro Porro
+  [3] 4 transfer(s), hit +0, net EP  88.0  bank $1.6m 
+       OUT: Vinícius Júnior, Matheus Cunha, Raúl Rangel, Nuno Mendes
+       IN : Álex Baena, Harry Kane, Mike Maignan, Pedro Porro
+  [4] 4 transfer(s), hit +0, net EP  88.0  bank $0.9m 
+       OUT: Vinícius Júnior, Matheus Cunha, Manuel Neuer, Jorge Sánchez
+       IN : Álex Baena, Harry Kane, Mike Maignan, Pedro Porro
+
+-- Best XI after plan [0] — 4-3-3 --
+   GK Unai Simón               ESP $5.0  EP  4.7 vs BEL own 15.2%
+  DEF Pedro Porro              ESP $5.5  EP  7.2 vs BEL own  7.5%
+  DEF Marcos Llorente          ESP $5.5  EP  6.2 vs BEL own  4.1%
+  DEF Marc Cucurella           ESP $5.1  EP  6.0 vs BEL own 43.9%
+  DEF Lisandro Martínez        ARG $4.6  EP  6.0 vs SUI own 19.6%
+  MID Ousmane Dembélé          FRA $10.0 EP  7.6 vs MAR own 43.1%
+  MID Jude Bellingham          ENG $8.3  EP  7.5 vs NOR own 32.9%
+  MID Álex Baena               ESP $6.0  EP  6.3 vs BEL own  4.3%
+  FWD Lionel Messi             ARG $10.0 EP  9.7 vs SUI own 54.4% (C)
+  FWD Kylian Mbappé            FRA $10.5 EP  8.9 vs MAR own 69.8% (VC)
+  FWD Harry Kane               ENG $10.5 EP  7.9 vs NOR own 43.5%
+  bench: 1.Alexis Mac Allister, 2.Ismael Saibari, 3.Jorge Sánchez  GK: Manuel Neuer
+
+-- Booster advice --
+  * Qualification Booster EV this round: +14.4 pts (2 x P(advance) per starter). Rounds left shrink its ceiling — use it in QF.
+  * Clean Sheet Shield EV: ~+9.0 pts across your 5 GK/DEF starters (P(exactly 1 conceded) x CS pts). Best on a defense-heavy XI.
+  * Maximum Captain: hold for the FINAL unless desperate — current captain choice is close (EP gap 0.8).
+  * Wildcard: unlimited rebuild would add ~0.0 EP over the best free-transfer plan this round. Hold (QF/SF often better after surprises).
+  * 12th Man: best add would be Lionel Messi (~9.7 EP). Usually strongest in SF/Final when your bench is thin.
+  * Reminder: only ONE booster per round.
+
+Model: form(0.55) + stats(0.45), Elo-Poisson opponent model; edit data/elo.json + data/news.json to steer it.
