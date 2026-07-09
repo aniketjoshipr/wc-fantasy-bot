@@ -76,7 +76,7 @@
  "6": {
   "stage": "QF",
   "deadline": "2026-07-09T21:00:00+01:00",
-  "logged_at": "2026-07-08T15:35:21+00:00",
+  "logged_at": "2026-07-09T12:16:10+00:00",
   "xi_ids": [
    757,
    1088,
@@ -127,6 +127,6 @@
    "174": "Matheus Cunha"
   },
   "predicted_my_xi_ep": 64.7,
-  "recommended_plan_net_ep": 88.23
+  "recommended_plan_net_ep": 87.5
  }
 }
