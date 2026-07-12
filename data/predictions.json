@@ -127,6 +127,24 @@
    "174": "Matheus Cunha"
   },
   "predicted_my_xi_ep": 64.7,
-  "recommended_plan_net_ep": 87.5
+  "recommended_plan_net_ep": 87.5,
+  "actual": {
+   "my_xi_points": 60,
+   "doubled_player": "Lionel Messi",
+   "per_player": {
+    "Raúl Rangel": null,
+    "Marc Cucurella": 2,
+    "Jorge Sánchez": null,
+    "Marcos Llorente": null,
+    "Lisandro Martínez": 2,
+    "Nuno Mendes": null,
+    "Alexis Mac Allister": 9,
+    "Ousmane Dembélé": 10,
+    "Jude Bellingham": 14,
+    "Lionel Messi": 5,
+    "Kylian Mbappé": 13
+   },
+   "settled_at": "2026-07-12T05:39:09+00:00"
+  }
  }
 }
