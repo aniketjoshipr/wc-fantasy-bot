@@ -146,5 +146,61 @@
    },
    "settled_at": "2026-07-12T05:39:09+00:00"
   }
+ },
+ "7": {
+  "stage": "SF",
+  "deadline": "2026-07-14T20:00:00+01:00",
+  "logged_at": "2026-07-13T14:14:01+00:00",
+  "xi_ids": [
+   757,
+   1088,
+   743,
+   1102,
+   1318,
+   916,
+   56,
+   501,
+   491,
+   38,
+   500
+  ],
+  "captain_id": 38,
+  "vice_id": 501,
+  "player_ep": {
+   "757": 0.0,
+   "1598": 0.0,
+   "1088": 3.74,
+   "743": 0.0,
+   "1102": 4.49,
+   "1318": 3.61,
+   "916": 0.0,
+   "56": 3.97,
+   "501": 4.85,
+   "491": 5.78,
+   "173": 0.0,
+   "792": 0.0,
+   "38": 7.06,
+   "500": 7.72,
+   "174": 0.0
+  },
+  "player_names": {
+   "757": "Raúl Rangel",
+   "1598": "Manuel Neuer",
+   "1088": "Marc Cucurella",
+   "743": "Jorge Sánchez",
+   "1102": "Marcos Llorente",
+   "1318": "Lisandro Martínez",
+   "916": "Nuno Mendes",
+   "56": "Alexis Mac Allister",
+   "501": "Ousmane Dembélé",
+   "491": "Jude Bellingham",
+   "173": "Vinícius Júnior",
+   "792": "Ismael Saibari",
+   "38": "Lionel Messi",
+   "500": "Kylian Mbappé",
+   "174": "Matheus Cunha"
+  },
+  "predicted_my_xi_ep": 48.3,
+  "recommended_plan_net_ep": 64.35
  }
 }
