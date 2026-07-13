@@ -1,19 +1,41 @@
 {
  "_comment": "YOUR team. Keep in sync with the app after applying transfers (wcfantasy squad --apply-plan N does it for you). Player ids match players.json.",
- "updated": "2026-07-03",
- "round": "R16",
- "player_ids": [757, 1598, 1088, 743, 1102, 1318, 916, 56, 501, 491, 173, 792, 38, 500, 174],
- "captain_id": 38,
- "vice_id": 501,
- "bench_order": [174, 173, 792],
- "bench_gk": 1598,
- "free_transfers": 4,
+ "updated": "2026-07-13",
+ "round": "SF",
+ "player_ids": [
+  506,
+  1088,
+  1085,
+  1318,
+  498,
+  501,
+  38,
+  500,
+  468,
+  491,
+  1997,
+  1102,
+  56,
+  1099,
+  474
+ ],
+ "captain_id": 500,
+ "vice_id": 38,
+ "bench_order": [
+  1088,
+  1318,
+  474
+ ],
+ "bench_gk": 1099,
+ "free_transfers": 6,
+ "_free_transfers_note": "6 for the FINAL (next round). SF used all 5 free transfers (out: Trossard, Sanchez, Barcola, Rangel, Baena; in: Merino, Llorente, Mac Allister, Simon, Gordon).",
+ "_12th_man_note": "SF 12th Man booster = Mikel Oyarzabal (id 1094, ESP FWD) — bonus scorer on top of the XI, not in player_ids.",
  "boosters_available": {
   "wildcard": true,
-  "12th_man": true,
+  "12th_man": false,
   "max_captain": true,
-  "qualification": true,
-  "cs_shield": true
+  "qualification": false,
+  "cs_shield": false
  },
- "_boosters_note": "VERIFY in the app which boosters you have already used and set them to false here."
+ "_boosters_note": "USED: qualification (R16), cs_shield (QF), 12th_man (SF -> Oyarzabal). REMAINING: max_captain (hold for FINAL) + wildcard (no value left; 6 free transfers cover any final rebuild, so it goes unused)."
 }

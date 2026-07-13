@@ -1,0 +1,58 @@
+=== FIFA Fantasy — SF recommendation ===
+Deadline (first kickoff): 2026-07-14T20:00:00+01:00   free transfers: 5
+
+-- Current squad (EP this round) --
+   GK Mike Maignan             FRA $5.0  EP  3.9 vs ESP own 23.4%
+   GK Raúl Rangel              MEX $3.9  EP  0.0 vs ?   own  5.0% ELIMINATED
+  DEF Pedro Porro              ESP $5.5  EP  4.6 vs FRA own 10.9%
+  DEF Lucas Digne              FRA $5.0  EP  4.0 vs ESP own 11.1%
+  DEF Marc Cucurella           ESP $5.1  EP  3.7 vs FRA own 50.0%
+  DEF Lisandro Martínez        ARG $4.6  EP  3.6 vs ENG own 26.1%
+  DEF Jorge Sánchez            MEX $4.0  EP  0.0 vs ?   own  1.7% ELIMINATED
+  MID Jude Bellingham          ENG $8.3  EP  5.8 vs ARG own 45.8%
+  MID Ousmane Dembélé          FRA $10.0 EP  4.8 vs ESP own 46.8%
+  MID Bradley Barcola          FRA $8.0  EP  3.2 vs ESP own  5.8%
+  MID Álex Baena               ESP $6.0  EP  2.3 vs FRA own 10.2% [DOUBT]
+  MID Leandro Trossard         BEL $6.6  EP  0.0 vs ?   own  6.0% ELIMINATED
+  FWD Kylian Mbappé            FRA $10.5 EP  7.7 vs ESP own 71.6%
+  FWD Lionel Messi             ARG $10.0 EP  7.1 vs ENG own 56.1%
+  FWD Harry Kane               ENG $10.5 EP  4.9 vs ARG own 48.8%
+
+-- Transfer plans (net EP = XI+captain EP + hit + 0.15x bench) --
+  [0] 5 transfer(s), hit +0, net EP  65.3  bank $0.2m << RECOMMENDED
+       OUT: Leandro Trossard, Jorge Sánchez, Bradley Barcola, Raúl Rangel, Álex Baena
+       IN : Mikel Merino, Marcos Llorente, Alexis Mac Allister, Unai Simón, Anthony Gordon
+  [1] 5 transfer(s), hit +0, net EP  65.3  bank $0.7m 
+       OUT: Leandro Trossard, Jorge Sánchez, Bradley Barcola, Raúl Rangel, Álex Baena
+       IN : Mikel Merino, Marcos Llorente, Alexis Mac Allister, Unai Simón, Aurélien Tchouaméni
+  [2] 5 transfer(s), hit +0, net EP  65.2  bank $1.0m 
+       OUT: Leandro Trossard, Jorge Sánchez, Bradley Barcola, Raúl Rangel, Álex Baena
+       IN : Mikel Merino, Marcos Llorente, Alexis Mac Allister, Unai Simón, Giovani Lo Celso
+  [3] 5 transfer(s), hit +0, net EP  65.2  bank $0.3m 
+       OUT: Leandro Trossard, Marc Cucurella, Álex Baena, Jorge Sánchez, Raúl Rangel
+       IN : Mikel Merino, Marcos Llorente, Alexis Mac Allister, Facundo Medina, Unai Simón
+  [4] 4 transfer(s), hit +0, net EP  65.2  bank $1.2m 
+       OUT: Leandro Trossard, Jorge Sánchez, Bradley Barcola, Raúl Rangel
+       IN : Mikel Merino, Marcos Llorente, Alexis Mac Allister, Unai Simón
+
+-- Best XI after plan [0] — 3-4-3 --
+   GK Mike Maignan             FRA $5.0  EP  3.9 vs ESP own 23.4%
+  DEF Pedro Porro              ESP $5.5  EP  4.6 vs FRA own 10.9%
+  DEF Marcos Llorente          ESP $5.5  EP  4.5 vs FRA own  4.0%
+  DEF Lucas Digne              FRA $5.0  EP  4.0 vs ESP own 11.1%
+  MID Jude Bellingham          ENG $8.3  EP  5.8 vs ARG own 45.8%
+  MID Ousmane Dembélé          FRA $10.0 EP  4.8 vs ESP own 46.8%
+  MID Mikel Merino             ESP $6.2  EP  4.3 vs FRA own  3.4%
+  MID Alexis Mac Allister      ARG $6.6  EP  4.0 vs ENG own 14.8%
+  FWD Kylian Mbappé            FRA $10.5 EP  7.7 vs ESP own 71.6% (C)
+  FWD Lionel Messi             ARG $10.0 EP  7.1 vs ENG own 56.1% (VC)
+  FWD Harry Kane               ENG $10.5 EP  4.9 vs ARG own 48.8%
+  bench: 1.Marc Cucurella, 2.Lisandro Martínez, 3.Anthony Gordon  GK: Unai Simón
+
+-- Booster advice --
+  * Maximum Captain: hold for the FINAL unless desperate — current captain choice is close (EP gap 0.7).
+  * Wildcard: unlimited rebuild would add ~0.0 EP over the best free-transfer plan this round. Hold (QF/SF often better after surprises).
+  * 12th Man: best add would be Kylian Mbappé (~7.7 EP). Usually strongest in SF/Final when your bench is thin.
+  * Reminder: only ONE booster per round.
+
+Model: form(0.55) + stats(0.45), Elo-Poisson opponent model; edit data/elo.json + data/news.json to steer it.
