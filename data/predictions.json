@@ -201,6 +201,24 @@
    "474": "Anthony Gordon"
   },
   "predicted_my_xi_ep": 63.8,
-  "recommended_plan_net_ep": 65.86
+  "recommended_plan_net_ep": 65.86,
+  "actual": {
+   "my_xi_points": 35,
+   "doubled_player": "Kylian Mbappé",
+   "per_player": {
+    "Mike Maignan": 1,
+    "Pedro Porro": 14,
+    "Lucas Digne": 0,
+    "Ousmane Dembélé": 2,
+    "Lionel Messi": 8,
+    "Kylian Mbappé": 1,
+    "Harry Kane": 2,
+    "Jude Bellingham": 2,
+    "Mikel Merino": 1,
+    "Marcos Llorente": 1,
+    "Alexis Mac Allister": 2
+   },
+   "settled_at": "2026-07-15T21:57:56+00:00"
+  }
  }
 }
