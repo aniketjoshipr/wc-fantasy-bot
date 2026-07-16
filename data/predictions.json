@@ -220,5 +220,61 @@
    },
    "settled_at": "2026-07-15T21:57:56+00:00"
   }
+ },
+ "8": {
+  "stage": "F",
+  "deadline": "2026-07-18T22:00:00+01:00",
+  "logged_at": "2026-07-16T17:25:17+00:00",
+  "xi_ids": [
+   506,
+   1085,
+   498,
+   501,
+   38,
+   500,
+   468,
+   491,
+   1997,
+   1102,
+   56
+  ],
+  "captain_id": 500,
+  "vice_id": 38,
+  "player_ep": {
+   "506": 3.24,
+   "1088": 2.71,
+   "1085": 4.44,
+   "1318": 0.7,
+   "498": 3.11,
+   "501": 4.56,
+   "38": 6.11,
+   "500": 6.55,
+   "468": 3.49,
+   "491": 5.87,
+   "1997": 3.38,
+   "1102": 4.38,
+   "56": 2.82,
+   "1099": 3.11,
+   "474": 3.81
+  },
+  "player_names": {
+   "506": "Mike Maignan",
+   "1088": "Marc Cucurella",
+   "1085": "Pedro Porro",
+   "1318": "Lisandro Martínez",
+   "498": "Lucas Digne",
+   "501": "Ousmane Dembélé",
+   "38": "Lionel Messi",
+   "500": "Kylian Mbappé",
+   "468": "Harry Kane",
+   "491": "Jude Bellingham",
+   "1997": "Mikel Merino",
+   "1102": "Marcos Llorente",
+   "56": "Alexis Mac Allister",
+   "1099": "Unai Simón",
+   "474": "Anthony Gordon"
+  },
+  "predicted_my_xi_ep": 54.5,
+  "recommended_plan_net_ep": 58.17
  }
 }
